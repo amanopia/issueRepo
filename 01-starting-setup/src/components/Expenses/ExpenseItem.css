@@ -1,0 +1,22 @@
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;;
+    background: #c6c6c6;
+    margin: 1rem 2rem;
+    padding: 1rem;
+}
+
+.expense-item_price {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    border: 3px solid black;
+    transition: all 0.2s ease;
+}
+
+.expense-item_price:hover {
+    background-color: #ffbb00;
+    cursor: pointer;
+}

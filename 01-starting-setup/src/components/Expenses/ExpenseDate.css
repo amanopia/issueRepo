@@ -1,0 +1,11 @@
+.expense__date {
+    display: flex;
+    flex-direction: column;
+    background: #565656;
+    color: #fff;
+    min-width: 6rem;
+    min-height: 6rem;
+    padding: 0.5rem;
+    align-items: center;
+    gap: 0.5rem;
+}

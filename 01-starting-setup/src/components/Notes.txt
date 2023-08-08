@@ -1,0 +1,28 @@
+Listening and working with user events and event handlers
+
+end your function name with handler which are being triggered by an event. Example <button onClick={clickHandler} > Change Color </button>
+
+Our components are just regular functions. The one special thing about our functions is that they return jsx code. Sice they are functions, someone has to call them. And we never call the functions. We just use them as html elements.
+
+Mentioning elements is almost calling them. By using our components in JSX code, we make react aware of them.
+When react goes through the code, it calls the JSX code. Then it again calls any of the components encounutered in it. It keeps on doing it, up until there is no more jsx code that is left to call. Then it translates the overall results and converts it into DOM instructions which renders something on the screen.
+
+App -> comp1 -> comp2 
+
+React goes through all the components once when react goes through the list once. When something on the screen changes, we say that the state of the application has changed.
+
+State is not a react specific concept but it is a key concept in react as well.
+
+useState is a function providedd by the react library, whih allows us to define values as states, changes to which results in the entire component being reloaded or re-rendered
+
+useState is one of the hooks which can only be called inside the ccomponent functions. With useState we create special kind of variables changes to which end up in the function being called again. This hook returns exactly two elements.
+1. The current state value
+2. A function that should be called to update the state value
+
+The update function doesn't execute right away, instead it schedules the update
+
+State update only causes that component to be rendered again and not the other ones
+
+useState registers some state for an instance of component.
+
+state is separated on a per component instance basis
